@@ -19,3 +19,6 @@ Thumbs.db
 
 # vscode stuff
 .vscode/
+
+# fluxguide core
+src/core
