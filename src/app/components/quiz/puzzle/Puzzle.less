@@ -1,0 +1,197 @@
+.puzzle-section {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 60vh;
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+.puzzle-section canvas {
+    -webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	outline: none;
+    touch-action: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0); /* mobile webkit */
+}
+
+.puzzle-canvas {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+}
+
+.puzzle-ui {
+    bottom: 1rem;
+    right: 1rem;
+    position: absolute;
+    transition: .25s all;
+	z-index: 10;
+}
+
+.puzzle-ui.disabled {
+    pointer-events: none;
+    display: none;
+    opacity: 0;
+}
+
+.puzzle-ui.disabled * {
+    display: none;
+}
+
+.puzzle-ui .ui-container {
+    display: flex;
+    flex-direction: column;
+    transition: .25s all;
+}
+
+.puzzle-ui .ui-popup-container {
+    display: flex;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .25);
+    transition: 1s all;
+}
+
+.puzzle-ui button[type="button"] {
+    color: white;
+    background: black;
+    padding: 8px 25px;
+    border-radius: 200px;
+    border: none;
+    cursor: pointer;
+    transition: .25s all;
+
+	-webkit-user-select: none; /* Safari */
+	-ms-user-select: none; /* IE 10 and IE 11 */
+  	user-select: none; /* Standard syntax */
+}
+
+.puzzle-ui .functionality {
+    display: flex;
+    position: relative;
+    width: 48px;
+    height: 48px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: black;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .25s all;
+	margin-top: 10px;
+}
+
+.puzzle-ui .functionality:hover, .puzzle-ui button[type="button"]:hover {
+    background: #555;
+    transition: .10s all;
+}
+
+.puzzle-ui .functionality:active, .puzzle-ui button[type="button"]:active {
+    background: #999;
+}
+
+/* popup */
+
+.puzzle-ui .ui-popup {
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+	max-width: 400px;
+    transform: translateY(0px);
+    transition: all .5s;
+}
+
+.puzzle-ui .section {
+	margin: 25px;
+}
+
+.puzzle-ui .section.container {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin-bottom: 15px;
+}
+
+.puzzle-ui h2 {
+	margin: 0px;
+	margin-bottom: 1em;
+}
+
+.puzzle-ui input {
+	border: none;
+	border-bottom: 1px solid black;
+	outline: none;
+}
+
+.puzzle-ui input#url {
+	user-select: all;
+}
+
+.puzzle-ui input#cols, .puzzle-ui input#rows {
+	position: relative;
+	width: 50px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.puzzle-ui input::-webkit-outer-spin-button,
+.puzzle-ui input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* tooltip */
+
+.puzzle-ui .tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.puzzle-ui .tooltip .tooltip-content {
+    visibility: hidden;
+    width: 120px;
+    background-color: rgba(0,0,0,.75);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: calc(25% + 3px);
+    right: 120%;
+}
+
+.puzzle-ui .tooltip .tooltip-content::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgba(0,0,0,.75);
+}
+.puzzle-ui .tooltip:hover .tooltip-content {
+    visibility: visible;
+}
+
+/* touch screen */
+
+@media (hover: none) {
+	.puzzle-ui .tooltip .tooltip-content {
+		display: none;
+  	}
+
+    .puzzle-ui .functionality:hover, .puzzle-ui input[type="button"]:hover,
+    .puzzle-ui .functionality:active, .puzzle-ui input[type="button"]:active {
+		background: black;
+	}
+}
+

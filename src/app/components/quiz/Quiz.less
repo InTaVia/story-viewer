@@ -1,0 +1,813 @@
+// General Quiz Styles that will be used also inside QuizComponets
+
+// Ex: Variables
+:root {
+    --main-red: rgb(239, 120, 137);
+    --main-green: rgb(165, 207, 148);
+    --main-blue: rgb(128, 178, 220);
+    --light-blue: rgb(203, 223, 240);
+    --hotspot: 80px;
+}
+
+
+/*******************************************
+* Basic styles
+*******************************************/
+
+.quiz-submit-btn {
+    display: block;
+	width: max-content;
+	padding: 1rem 1.5rem;
+	background: #82A989;
+	margin-bottom: 1rem;
+	border-radius: 500px;
+	color: #fff;
+	margin: 5vh auto;
+	transform: translate3d(0, 0, 0);
+}
+
+/************************* 
+* After the question was answered,
+* prevent unwanted touch events,
+* like selecting/deselecting answers
+*************************/
+
+.is-solved .disable-pointer-events,
+.quiz-review .disable-pointer-events {
+    pointer-events: none;
+}
+
+/*******************************************
+* Question <H3> Text element
+*******************************************/
+
+.quiz-question {
+    margin: 0.5rem 0 1rem 0;
+}
+
+
+/*******************************************
+* SUBCOMPONENTS
+*******************************************/
+
+
+/*******************************************
+* Single Choice
+*******************************************/
+
+
+.sc-answer {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--light-blue);
+    color: var(--main-blue);
+    margin: 0 auto 2vh;
+
+    transition: 100ms all ease-in-out;
+}
+
+.sc-answer.is-image img {
+    width: 100%;
+    height: 15vh;
+    max-width: 100%;
+    max-height: 200px;
+
+    object-fit: contain;
+}
+
+/***************** SC Selected ****************/
+
+.sc-answer.selected {
+    border: 1px solid var(--main-blue);
+    background: var(--main-blue);
+    color: #fff;
+}
+
+/***************** SC Answered ****************/
+
+.quiz-was-answered .sc-answer.selected.correct,
+.quiz-review .sc-answer.selected.correct {
+    border: 1px solid var(--main-green);
+    background: var(--main-green);
+    color: #fff;
+}
+
+.quiz-was-answered .sc-answer.selected.wrong,
+.quiz-review .sc-answer.selected.wrong {
+    border: 1px solid var(--main-red);
+    background: var(--main-red);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+/*******************************************
+* Multiple Choice
+*******************************************/
+
+.mc-answer {
+    display: block;
+    font-family: "Poppins";
+	width: 100%;
+	padding: 1rem 1.5rem;
+	border: 2px solid #82A989;
+	color: #82A989;
+	margin: 0 auto 2vh;
+	border-radius: 500px;
+	transition: 100ms all ease-in-out;
+}
+
+.mc-answer:hover {
+    display: block;
+
+	width: 100%;
+	padding: 1rem 1.5rem;
+	border: 2px solid #82A989;
+    background-color: #82A989;
+	color: #fff;
+	margin: 0 auto 2vh;
+	border-radius: 500px;
+	transition: 100ms all ease-in-out;
+}
+
+.mc-answer.is-image img {
+    width: 100%;
+    height: 15vh;
+    max-width: 100%;
+    max-height: 200px;
+
+    object-fit: contain;
+}
+
+/***************** MC Selected ****************/
+
+.mc-answer.selected {
+    border: 1px solid @primary;
+    background: #fff;
+    color: #fff;
+}
+
+
+/***************** MC Answered ****************/
+
+.quiz-was-answered .mc-answer.selected.correct,
+.quiz-review .mc-answer.selected.correct {
+    border: 1px solid var(--main-green);
+    background: var(--main-green);
+    color: #fff;
+}
+
+.quiz-was-answered .mc-answer.selected.wrong,
+.quiz-review .mc-answer.selected.wrong {
+    border: 1px solid var(--main-red);
+    background: var(--main-red);
+    color: #fff;
+}
+
+
+
+
+
+
+
+/*******************************************
+* Estimation
+*******************************************/
+
+.estimation {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.estimation .estimation-wrapper {
+    position: relative;
+    margin: 0 0;
+    width: 100%;
+    height: 60px;
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.estimation .estimation-slider {
+    width: 100%;
+    padding: 0 5vw;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.estimation .estimation-input-bg {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: var(--light-blue);
+    height: 3px;
+    width: 100%;
+    transform: translate3d(0, -50%, 0);
+}
+
+.estimation .min-max-numbers {
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: space-between;
+}
+
+/***************** Estimation User Answer ****************/
+
+.estimation .estimation-answer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(0, -50%, 0);
+}
+
+.estimation .estimation-knob {
+    width: 20px;
+    height: 20px;
+
+    background: var(--main-blue);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate3d(-50%, -50%, 0);
+    pointer-events: none;
+}
+
+.estimation .estimation-answer span {
+    color: #000;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate3d(-50%, -150%, 0);
+}
+
+
+/***************** Estimation Correct Answer ****************/
+.estimation .correct-answer {
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+}
+
+.estimation .correct-answer-icon {
+    width: 10px;
+    height: 10px;
+
+    background: var(--main-green);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate3d(-50%, -50%, 0);
+    pointer-events: none;
+}
+
+.estimation .correct-answer span {
+    color: #000;
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    transform: translate3d(-50%, -150%, 0);
+}
+
+
+/***** Browser input type range styles that are not visible for human's eye :) *******/
+.estimation input[type=range] {
+    width: 100%;
+    top: 50%;
+    -webkit-appearance: none;
+    box-sizing: content-box;
+    position: absolute;
+    transform: translate3d(0, -50%, 0);
+    background: transparent;
+    left: 0;
+}
+
+.estimation input[type=range]:focus {
+    outline: none;
+}
+
+.estimation input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 4px;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.estimation input[type=range]::-webkit-slider-thumb {
+    height: 8px;
+    width: 8px;
+    padding: 20px;
+
+    box-sizing: content-box;
+    background: transparent;
+    background-clip: content-box;
+
+    border-radius: 50%;
+    -webkit-appearance: none;
+
+    border: 0px;
+
+    transform: translate3d(0%, -50%, 0);
+    cursor: pointer;
+}
+
+.estimation input[type=range]:focus::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+
+/***************** Estimation Answered ****************/
+.estimation.quiz-was-answered .answered-wrong .estimation-knob,
+.estimation.quiz-review .answered-wrong .estimation-knob {
+    background: var(--main-red);
+}
+
+.estimation.quiz-was-answered .answered-correct .estimation-knob,
+.estimation.quiz-review .answered-correct .estimation-knob {
+    background: var(--main-green);
+}
+
+.estimation.quiz-was-answered .answered-wrong .estimation-input-bg,
+.estimation.quiz-review .answered-wrong .estimation-input-bg {
+    background: var(--main-red);
+}
+
+.estimation.quiz-was-answered .answered-correct .estimation-input-bg,
+.estimation.quiz-review .answered-correct .estimation-input-bg {
+    background: var(--main-green);
+}
+
+
+
+
+
+
+
+/*******************************************
+* Matrix 
+*******************************************/
+
+
+// Vars defined in Quiz.vue:
+// --light-blue
+// --main-blue
+// --main-green
+// --main-red
+
+// Vars only for Matrix.vue
+// --matrix-height
+// --matrix-max-height
+
+
+.matrix {
+    // important for .item.drag, when item gets position: absolute
+    // otherwise your dragged element will be attached to the top left corner of parent/body element
+    position: relative;
+    width: 100%;
+
+    --matrix-height: 10vh;
+    --matrix-max-height: 100px;
+}
+
+.matrix .row {
+    display: flex;
+    justify-content: space-between;
+
+    border: 1px solid var(--light-blue);
+    margin-bottom: 1rem;
+}
+
+.matrix .row .question,
+.matrix .row .answer {
+    width: 50%;
+}
+
+
+/**  Question Styles **/
+.matrix .question {
+    min-width: var(--matrix-height);
+    padding: 0.5rem;
+}
+
+.matrix .question.question-image {
+    padding: 0;
+
+}
+
+.matrix .question.question-image img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+
+    height: var(--matrix-height);
+    max-height: var(--matrix-max-height);
+}
+
+
+/**  Answers / Drop Zone Styles **/
+.matrix .answer {
+    min-height: var(--matrix-height);
+    width: var(--matrix-height);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--light-blue);
+
+}
+
+.matrix .answer.drop {
+    background-color: var(--main-blue);
+}
+
+
+/** Item Itself Styles in different states **/
+.matrix .item {
+    position: static;
+    height: 100%;
+    max-height: var(--matrix-height);
+
+    width: auto;
+    max-width: var(--matrix-max-height);
+
+    // IMPORTANT STYLES - DO NOT REMOVE OR YOU MIGHT DIE!!!
+    touch-action: none;
+    user-select: none;
+}
+
+.matrix .items-container .item {
+    margin: 0 2.5vw;
+}
+
+.matrix .item.drag {
+    position: absolute;
+}
+
+.matrix .item.text-item {
+    height: auto;
+    padding: 0.5rem;
+    background: #fff;
+    border: 1px solid var(--light-blue);
+}
+
+.matrix .item img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+
+    min-width: var(--matrix-height);
+
+    object-fit: cover;
+}
+
+.matrix .answer.logged .image-item {
+    height: 80%;
+}
+
+.matrix.quiz-review .answer-review {
+    position: relative;
+    width: auto;
+    max-width: var(--matrix-max-height);
+}
+
+.matrix.quiz-review .answer-review label {
+    padding: 0.5rem;
+    background: #fff;
+}
+
+.matrix.quiz-review .answer-review img {
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+}
+
+
+
+/** Items Container **/
+.matrix .items-container {
+    width: 100%;
+    max-width: 100%;
+
+    // height is default matrix size + two times padding top/bottom
+    height: calc(var(--matrix-height) + 4vh);
+    padding: 2vh 2.5vw;
+
+    max-height: var(--matrix-max-height);
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    // Change Position to absolute if you want it to be over the top of other elements
+    // with position:absolute -> add left, bottom, z-index
+    position: relative;
+
+    // IMPORTANT STYLES - DO NOT REMOVE OR YOU MIGHT DIE!!!
+    white-space: nowrap;
+    overflow-x: scroll;
+}
+
+// Hack: add right padding to your overscroll container, otherwise it will look like it's cut off
+// width of the element is the same as your .items-container left/right padding
+// order 999999, so it would be always as the last element
+.matrix .items-container::after {
+    position: relative;
+    display: inline-flex;
+    content: "";
+    width: 2.5vw;
+    min-width: 2.5vw;
+    height: 100%;
+    order: 999999;
+    pointer-events: none;
+}
+
+/***************** Matrix Answered ****************/
+
+.matrix .correct-item {
+    padding: 1rem
+}
+
+.matrix .question.question-image .correct-item img,
+.matrix .correct-item img {
+    width: 50%;
+    height: auto;
+    max-height: var(--matrix-max-height);
+    object-fit: cover;
+}
+
+.matrix .correct-item label {
+    display: block;
+}
+
+.matrix .row.answered-correct {
+    border: 1px solid var(--main-green);
+}
+
+.matrix .row.answered-wrong {
+    border: 1px solid var(--main-red);
+}
+
+.matrix .row.answered-correct .answer {
+    background-color: var(--main-green);
+}
+
+.matrix .row.answered-wrong .answer {
+    background-color: var(--main-red);
+}
+
+
+
+// special styles because of matrix-container / not needed if matrix-container has position: absolute
+.matrix .matrix-rows-section,
+.matrix .question {
+    padding: 0 2rem;
+}
+
+
+/*******************************************
+* Puzzle
+*******************************************/
+
+
+/* solved puzzle */
+.puzzle-section {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 60vh;
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+.puzzle-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+img[alt="puzzle"] {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/*******************************************
+* Hotspot
+*******************************************/
+
+.hotspot {
+    button {
+        display: block;
+        width: 100%;
+        padding: 0.5rem;
+        background: #fff;
+        color: var(--main-blue);
+        margin: 0 auto 2vh;
+        transition: 100ms all ease-in-out;
+    }
+}
+
+.hotspot-overlay {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+}
+
+.hotspot-overlay.quiz-was-answered {
+    .hotspot-detail.transparent {
+        opacity: 1;
+    }
+}
+
+.hotspot-overlay header {
+    position: relative;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+
+    button {
+        color: #fff;
+    }
+}
+
+.hotspot-image {
+    position: relative;
+}
+
+.hotspot-image-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background: #000;
+
+
+    img {
+        width: 100%;
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
+.hotspot-preview {
+    position: relative;
+
+    img {
+        height: calc(100vw - 4rem);
+        width: calc(100vw - 4rem);
+        object-fit: cover;
+        opacity: .5;
+    }
+
+    button {
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 75px);
+        height: 40px;
+        width: 150px;
+    }
+}
+
+.hotspot-detail {
+    position: absolute;
+    z-index: 1100;
+    width: var(--hotspot);
+    height: var(--hotspot);
+    border-radius: 50%;
+
+    &.transparent {
+        opacity: 0;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        z-index: 1090;
+        top: 0;
+        left: 0;
+        width: calc(var(--hotspot)/2);
+        height: calc(var(--hotspot)/2);
+        margin: calc(var(--hotspot)/4);
+        border-radius: 50%;
+        border: 5px solid var(--main-green);
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        z-index: 1090;
+        top: 5px;
+        left: 5px;
+        width: calc(var(--hotspot)/2);
+        height: calc(var(--hotspot)/2);
+        margin: calc(var(--hotspot)/4);
+        border-radius: 50%;
+        background: rgba(255, 255, 255, .55);
+    }
+
+    svg {
+        display: none;
+    }
+
+    &.correct {
+        opacity: 1;
+        transition: opacity .5s ease-in-out;
+        background: var(--main-green);
+        width: calc(var(--hotspot)/2);
+        height: calc(var(--hotspot)/2);
+        // Margin = difference between width/height of detail and new size
+        margin: calc(var(--hotspot)/4);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: calc(var(--hotspot)/-3);
+            left: calc(var(--hotspot)/-3);
+            z-index: 1090;
+            width: calc(var(--hotspot)/3*2);
+            height: calc(var(--hotspot)/3*2);
+            background: rgba(255, 255, 255, .55);
+            border: none;
+            border-radius: 50%;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            z-index: 1090;
+            width: calc(var(--hotspot)/2);
+            height: calc(var(--hotspot)/2);
+            top: calc(var(--hotspot)/-4);
+            left: calc(var(--hotspot)/-4);
+            background: var(--main-green);
+            border: none;
+            border-radius: 50%;
+        }
+
+        svg {
+            position: absolute;
+            z-index: 1100;
+            display: block;
+        }
+    }
+}
+
+.c-toast {
+    width: calc(100% - 1rem);
+    margin: 0.5rem !important;
+    padding: .5rem !important;
+    border-radius: 5px !important;
+    background: #000 !important;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+
+    &--success {
+        background: var(--main-green) !important;
+    }
+
+    &--error {
+        background: var(--main-red) !important;
+    }
+}
+
+/*******************************************
+* Extended Solution  - no styles at the moment :)
+*******************************************/

@@ -1,0 +1,4 @@
+[submodule "src/core"]
+	path = src/core
+	url = git@bitbucket.org:fluxguide/fluxguide-core-app.git
+	branch = master

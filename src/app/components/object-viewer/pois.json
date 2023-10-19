@@ -1,0 +1,23 @@
+[
+    {
+        "id": "51",
+        "title": "Gefertigt aus Stein",
+        "app_position": {"face":{"a":9938,"b":9935,"c":9939,"normal":{"x":-0.9996278319308242,"y":-0.023758899930395927,"z":0.013405681757282562},"materialIndex":0},"point":{"x":-0.17251777600390444,"y":0.03534032401482112,"z":-0.12250259326947516},"uv":{"x":0.6504336517744314,"y":0.3770258267522831}},
+        "app_content": "Gefertigt aus Stein",
+        "root_item_id": "51"
+    },
+    {
+        "id": "52",
+        "title": "Bindenschild",
+        "app_position": {"face":{"a":2033,"b":2031,"c":2032,"normal":{"x":-0.6978722348311595,"y":-0.08649196120162932,"z":-0.7109806498768153},"materialIndex":0},"point":{"x":-0.1474950573732974,"y":0.4356738589657101,"z":0.1033622581776389},"uv":{"x":0.12187408469280643,"y":0.23110857503640148}},
+        "app_content": "rotweißrotes Wappen - steht für habsburgisches Österreich",
+        "root_item_id": "52"
+    },
+    {
+        "id": "53",
+        "title": "Kreuzaufsatz (Herzogshut)",
+        "app_position": {"face":{"a":3065,"b":3064,"c":3062,"normal":{"x":-0.40947451177183375,"y":-0.041462208334274234,"z":-0.9113789055542506},"materialIndex":0},"point":{"x":0.03207585150978135,"y":0.9447119476379149,"z":0.03878034101212615},"uv":{"x":0.7644952909366316,"y":0.5423179345766702}},
+        "app_content": "gefertigt aus Metall",
+        "root_item_id": "53"
+    }
+]

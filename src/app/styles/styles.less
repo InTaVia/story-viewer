@@ -1,0 +1,148 @@
+/*************************************************************
+ *
+ * Custom Exhibition CSS
+ * Juedische Gemeinde Graz
+ * @author  Fluxguide
+ * ---------------------
+ *
+ * USAGE:
+ * 
+ *   Custom Images/Fonts via default LESS-Variable:
+ * 		@{image_url}	->  like: background-image: url("@{image_url}/porsche_museum_logo_small.png");
+ * 		
+ *   Styles for "Tablets" or "small phones" (iphone4 and smaller):
+ * 		&.tablet .selector {}
+ * 		&.small_phone .selector {} 	
+ * 
+*************************************************************/
+
+// Example font face
+
+
+//   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+//   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+//   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/****************************************
+* Breakpoints
+****************************************/
+
+@xs: 350px;
+@sm: 480px;
+@md: 768px;
+
+/****************************************
+* Other variables
+****************************************/
+
+/****************************************
+* Colors
+****************************************/
+
+
+@darkgrey: #434343;
+@primary: #82A989;
+
+@place-primary: #b4a7d6;
+@place-highlighted: #8c70b7;
+
+@event-primary: #639c45;
+@event-highlighted: #41682d;
+
+
+
+/****************************************
+* Fonts
+****************************************/
+
+@font-face {
+    font-family: "Poppins";
+    src: url('@assets/source-sans-pro-latin-300-normal.ttf') format('truetype');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url('@assets/source-sans-pro-latin-400-normal.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Poppins";
+    src: url('@assets/source-sans-pro-latin-600-normal.ttf') format('truetype');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Baskerville";
+    src: url('@assets/LibreBaskerville-Regular.ttf') format('truetype');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Baskerville";
+    src: url('@assets/LibreBaskerville-Bold.ttf') format('truetype');
+    font-weight: 600;
+}
+
+/****************************************
+* Typography
+****************************************/
+h1, h2, h3 {
+    font-family: 'Baskerville';
+}
+
+
+p {
+	color: @darkgrey;
+	font-family: 'Poppins';
+}
+
+h1, h2 {
+	margin-bottom: .5em;
+}
+
+p {
+	margin-top: 0;
+}
+
+
+/****************************************
+* Loading
+****************************************/
+
+/****************************************
+* Buttons
+****************************************/
+
+/****************************************
+* Transitions
+****************************************/
+
+/****************************************
+* Base Styles
+****************************************/
+
+/****************************************
+* Components
+****************************************/
+
+.card {
+	background: white;
+}
+
+/****************************************
+* Form
+****************************************/
+
+/****************************************
+* Animations
+****************************************/
+
+/****************************************
+* Utilities
+****************************************/
+
+
+iframe {
+	width: 100% !important; 
+	// height: auto !important;
+	min-height: 300px;
+}

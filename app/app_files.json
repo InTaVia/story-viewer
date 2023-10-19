@@ -1,0 +1,258 @@
+{
+  "app_files_hash": "Szf76R9M2lCHgPZ5G95hFIqBv5U=",
+  "app_files": [
+    {
+      "url": "assets/LibreBaskerville-Bold.d3c53b79.ttf",
+      "moddate": "s+CqdRl7qUmCwsJ5mF+rM+TA7Nw=",
+      "is_app_file": "1",
+      "size": 155428
+    },
+    {
+      "url": "assets/LibreBaskerville-Bold.ttf",
+      "moddate": "ON4Dd8k0/3qrauWC2Ds/o0uac2g=",
+      "is_app_file": "1",
+      "size": 155428
+    },
+    {
+      "url": "assets/LibreBaskerville-Regular.243bcf9e.ttf",
+      "moddate": "RYMTSojHpKwaIR148SbliPGxvUs=",
+      "is_app_file": "1",
+      "size": 154676
+    },
+    {
+      "url": "assets/LibreBaskerville-Regular.ttf",
+      "moddate": "/5fprhjaep78R/pxgM0MYoQO5T0=",
+      "is_app_file": "1",
+      "size": 154676
+    },
+    {
+      "url": "assets/loading.gif",
+      "moddate": "Ol03VYlNkRr+zr5pi5aXxDr1lg8=",
+      "is_app_file": "1",
+      "size": 5634
+    },
+    {
+      "url": "assets/new-office.png",
+      "moddate": "NopbmXU1NqRGOD2CCyBvSuMAjpY=",
+      "is_app_file": "1",
+      "size": 761976
+    },
+    {
+      "url": "assets/object-viewer/bg_img.hdr",
+      "moddate": "5je5eHo6ADxGXad7p/pe7eyzhjU=",
+      "is_app_file": "1",
+      "size": 197369
+    },
+    {
+      "url": "assets/object-viewer/bgImg.png",
+      "moddate": "GuQyF+kQ+VA6t9OhCikYtKIcWhE=",
+      "is_app_file": "1",
+      "size": 75562
+    },
+    {
+      "url": "assets/object-viewer/obj_diff.jpg",
+      "moddate": "PASUvDsWJJ+u/jOW9RJ8tJVBFSM=",
+      "is_app_file": "1",
+      "size": 238586
+    },
+    {
+      "url": "assets/object-viewer/obj_norm.jpg",
+      "moddate": "RHuDSX1JRiwK6aL61H81DDp0dlI=",
+      "is_app_file": "1",
+      "size": 258185
+    },
+    {
+      "url": "assets/object-viewer/PreLoad.glb",
+      "moddate": "KWpfIxZDrD0cDvDrCQuGtm7Yh+Y=",
+      "is_app_file": "1",
+      "size": 3584
+    },
+    {
+      "url": "assets/object-viewer/Puresky.hdr",
+      "moddate": "GOg+lGZXlNdaUiyyMs2OkbGneA8=",
+      "is_app_file": "1",
+      "size": 5563538
+    },
+    {
+      "url": "assets/object-viewer/svg/CloseFullscreen.svg",
+      "moddate": "rK824jH5/aoWeSBP3TRsMbBc2g0=",
+      "is_app_file": "1",
+      "size": 257
+    },
+    {
+      "url": "assets/object-viewer/svg/ClosePoi.svg",
+      "moddate": "GEaEX3aPOKh+SEIy84Hl1gUrQt0=",
+      "is_app_file": "1",
+      "size": 525
+    },
+    {
+      "url": "assets/object-viewer/svg/icon_chevron.svg",
+      "moddate": "FG8rrolmZT0PZC1A/Wr2Zzb++/4=",
+      "is_app_file": "1",
+      "size": 440
+    },
+    {
+      "url": "assets/object-viewer/svg/icon_close.svg",
+      "moddate": "090M4VZdD4dQW9Xm32j8BQaHqd0=",
+      "is_app_file": "1",
+      "size": 504
+    },
+    {
+      "url": "assets/object-viewer/svg/icon_human.svg",
+      "moddate": "vxtRjnyw3RWrZDbJZqLMr0M9rfE=",
+      "is_app_file": "1",
+      "size": 627
+    },
+    {
+      "url": "assets/object-viewer/svg/icon_menu.svg",
+      "moddate": "Qyo3j7x8PCvXFz/cS+zxiasNC/0=",
+      "is_app_file": "1",
+      "size": 648
+    },
+    {
+      "url": "assets/object-viewer/svg/icon_reset.svg",
+      "moddate": "XSfPB3dHtTlt/QfY7cI/Kolg33w=",
+      "is_app_file": "1",
+      "size": 719
+    },
+    {
+      "url": "assets/object-viewer/svg/icon_rotate_left.svg",
+      "moddate": "VJC5KUg2Qo9mbhvZHM6az5koVKs=",
+      "is_app_file": "1",
+      "size": 566
+    },
+    {
+      "url": "assets/object-viewer/svg/icon_rotate.svg",
+      "moddate": "N5XkdkYuwr6F+WAUMq6MCtRp7Gw=",
+      "is_app_file": "1",
+      "size": 422
+    },
+    {
+      "url": "assets/object-viewer/svg/icon_zoomin.svg",
+      "moddate": "7zvHP9jS8Nc49fXoWA3V29EhfPY=",
+      "is_app_file": "1",
+      "size": 448
+    },
+    {
+      "url": "assets/object-viewer/svg/icon_zoomout.svg",
+      "moddate": "lLxIhGLUXJc6oOWd5QPVKoY3CA8=",
+      "is_app_file": "1",
+      "size": 318
+    },
+    {
+      "url": "assets/object-viewer/svg/MovingHand.svg",
+      "moddate": "MOElUbd5vKEqzTIE8RTG/zJ+zkY=",
+      "is_app_file": "1",
+      "size": 806
+    },
+    {
+      "url": "assets/object-viewer/svg/OpenFullscreen.svg",
+      "moddate": "9ldmC8rfdhsiAoMuOEaBIYw3wCk=",
+      "is_app_file": "1",
+      "size": 576
+    },
+    {
+      "url": "assets/object-viewer/svg/OpenPoi.svg",
+      "moddate": "jsb+JWgkK6dNOriHHdOdQ71T9Oc=",
+      "is_app_file": "1",
+      "size": 559
+    },
+    {
+      "url": "assets/object-viewer/Test.fbx",
+      "moddate": "mbMkQRQz531JDZZjHAl7uJfhExk=",
+      "is_app_file": "1",
+      "size": 1723804
+    },
+    {
+      "url": "assets/object-viewer/Test.glb",
+      "moddate": "BgijebU8w+r3cwR1XE6F3qxAlgc=",
+      "is_app_file": "1",
+      "size": 1093292
+    },
+    {
+      "url": "assets/object-viewer/Test.mtl",
+      "moddate": "cYmf7ioKk8GVlnbBiWsHkJut5Gw=",
+      "is_app_file": "1",
+      "size": 448
+    },
+    {
+      "url": "assets/object-viewer/Test.obj",
+      "moddate": "aYHukZ4NSc3q1iXG8q+Qta1h0ms=",
+      "is_app_file": "1",
+      "size": 462253
+    },
+    {
+      "url": "assets/old-office.png",
+      "moddate": "EDdm3AxLoGB0+t2aJ1AIZbk5VSY=",
+      "is_app_file": "1",
+      "size": 67199
+    },
+    {
+      "url": "assets/Poppins-Bold.ttf",
+      "moddate": "z1k0fU49a9+RotHHNdr8TOMtius=",
+      "is_app_file": "1",
+      "size": 153944
+    },
+    {
+      "url": "assets/Poppins-Light.ttf",
+      "moddate": "Rh3AOalqOPpACh0v6RTBmSCZvAM=",
+      "is_app_file": "1",
+      "size": 159892
+    },
+    {
+      "url": "assets/Poppins-Medium.ttf",
+      "moddate": "n1CxDQzIy/Wdl4JZcZNHGGl0S5o=",
+      "is_app_file": "1",
+      "size": 156520
+    },
+    {
+      "url": "assets/Poppins-Regular.ttf",
+      "moddate": "KayxqCqKVaWk4wQ9PyHItUQZ7cs=",
+      "is_app_file": "1",
+      "size": 158240
+    },
+    {
+      "url": "assets/Poppins-SemiBold.ttf",
+      "moddate": "aKeZsc4pmuao8GpcZphlix6zcHA=",
+      "is_app_file": "1",
+      "size": 155232
+    },
+    {
+      "url": "assets/source-sans-pro-latin-300-normal.33c5a43b.ttf",
+      "moddate": "f8aEGcDH2mQinVB6w7+0vxwXe8g=",
+      "is_app_file": "1",
+      "size": 29880
+    },
+    {
+      "url": "assets/source-sans-pro-latin-300-normal.ttf",
+      "moddate": "5BzO/4uPO9xs0r6xsL786wwAWTg=",
+      "is_app_file": "1",
+      "size": 29880
+    },
+    {
+      "url": "assets/source-sans-pro-latin-400-normal.43fe7547.ttf",
+      "moddate": "7ONdRqHxrYgR1eNs0lwv79g8Tp8=",
+      "is_app_file": "1",
+      "size": 29856
+    },
+    {
+      "url": "assets/source-sans-pro-latin-400-normal.ttf",
+      "moddate": "7ef4sNE1Ww0VxPaREPmdKSCQN/M=",
+      "is_app_file": "1",
+      "size": 29856
+    },
+    {
+      "url": "assets/source-sans-pro-latin-600-normal.67f263a3.ttf",
+      "moddate": "Y08oRYBAR+KLpVBPoGlfu0pMOMk=",
+      "is_app_file": "1",
+      "size": 29784
+    },
+    {
+      "url": "assets/source-sans-pro-latin-600-normal.ttf",
+      "moddate": "1Mvhvs9owmKHDT6lZw38NT97EMI=",
+      "is_app_file": "1",
+      "size": 29784
+    }
+  ],
+  "app_build_timestamp": "2023-10-03T14:37:06.882Z"
+}
