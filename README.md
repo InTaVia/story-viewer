@@ -1,7 +1,8 @@
 ## **InTaVia Story Viewer**
 
 ### **Description:**
-The InTaVia Story Viewer offers an immersive experience, presenting a collection of stories curated using the Story Creator.
+The InTaVia Story Viewer offers a collection of stories curated using the Story Creator. 
+
 
 ### **Featured Stories:**
 1. [Albrecht Dürer's Biography](https://intavia.fluxguide.com/fluxguide/public/content/fluxguide/exhibitions/1/system/app/dist/index.html?storyId=986)
