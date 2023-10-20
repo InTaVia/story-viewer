@@ -48,16 +48,28 @@ Before you begin, make sure you have the following installed:
   1. **Feature Specific Stories:** Use `http://localhost:8888/app/`
   2. **Single Story Display:** Add `storyId` parameter, e.g. `http://localhost:8888/app/?storyId=986`
   3. **Autostart a Story:** Simply add `autostart=1` parameter, e.g. `http://localhost:8888/app/?storyId=986&autostart=1`
+  4. **Using local Story.json:** If you want to start the Story Viewer from a local story.json file on your computer (downloaded from Story Creator) you need to follow two steps:
+  > - copy the content of your downloaded JSON-file in the the `localStory.json` file. 
+  > - add `startLocalStory=1` parameter 
+
 
 ### **Technologies and Frameworks Used:**
 - [VueJS](https://vuejs.org/): A popular JavaScript framework.
 - [D3js](https://d3js.org/): Employed for timeline and network visualizations.
 - [MapLibre](https://maplibre.org/): Powers all map-based visualizations.
 
-### **License: MIT License**
-Copyright © 2023, [Fluxguide Ausstellungssysteme GmbH](https://www.fluxguide.com/) (Design, UX, Development)
+## License
 
-Permission is granted, free of charge, to any person obtaining a copy of this software and associated documentation (the "Software") to deal with the Software without restrictions. This includes rights to use, copy, modify, merge, publish, distribute, sublicense, and sell copies of the Software. Individuals to whom the Software is furnished have permission under the following conditions:
+This software is licensed under the Non-Profit Open Software License 3.0 (NPOSL-3.0).
 
-The provided copyright notice and permission notice must be included in all copies or significant portions of the Software.
-The Software is given "AS IS", without any warranty. This includes, but is not limited to, warranties of merchantability or fitness for any particular purpose. The authors or copyright holders are not liable for any claims, damages, or other liabilities arising from the Software.
+### Overview of the NPOSL-3.0:
+
+- **Non-Commercial**: The NPOSL explicitly prohibits using the software for direct commercial advantage, making it ideal for projects that wish to limit for-profit use.
+  
+- **Derivative Works**: You can modify the software, but you must make your changes available under the same license.
+  
+- **Distribution**: You can distribute the software and your derivatives, but again, they must be under the NPOSL-3.0.
+
+- **Attribution**: If you use the software, you must give appropriate credit.
+
+For the full license text and further details, please refer to the [NPOSL-3.0 license](https://opensource.org/licenses/NPOSL-3.0).
