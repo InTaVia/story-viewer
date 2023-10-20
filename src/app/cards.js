@@ -6,7 +6,7 @@ import SystemMenu from './cards/coreCards/SystemMenu.vue'; /* System-Menu-Card  
 
 // (SECTION 2) - Your cards
 /* Your custom cards */
-import DemoCard from '../core/components/DemoCard.vue';
+// import DemoCard from '../core/components/DemoCard.vue';
 // import HomeCard from './cards/HomeCard.vue';
 // import ThreeDHuman from './cards/ThreeDHuman.vue';
 import Story from './cards/Story.vue';
