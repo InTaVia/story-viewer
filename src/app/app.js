@@ -20,8 +20,9 @@ export default {
 		// FLUXGUIDE CORE EVENT - "appIsRunning"
 		fg.on('appIsRunning', function () {
 
-			if(fg.core.getGetParameter('storyId', document.URL)) {
-				fg.core.showCard('Story');
+			if(fg.core.getGetParameter('storyId', document.URL)
+			|| fg.core.getGetParameter('startLocalStory', document.URL) == '1') {
+					fg.core.showCard('Story');
 			}
 			else {
 				//showOverViewCard

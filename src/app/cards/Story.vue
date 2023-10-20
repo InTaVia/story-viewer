@@ -178,6 +178,8 @@ import PlaceSVG from '../assets/svgs/place.svg'
 import PlacePin from '../components/map/PlacePin.vue';
 import EventPin from '../components/map/EventPin.vue';
 
+import LocalStory from '../localStory.json';
+
 import { getEventKindPropertiesById } from '../visualization.config.ts';
 import { timeScale, colorScale } from "../temporal-coloring.ts";
 
@@ -195,14 +197,21 @@ getEventKindPropertiesById("event-kind-creation");
 
 let storyIdFromApi = reactive(fg.core.getGetParameter('storyId', document.URL));
 let autostart = reactive(fg.core.getGetParameter('autostart', document.URL));
+let startLocalStory = reactive(fg.core.getGetParameter('startLocalStory', document.URL));
 
+
+debugger
 if (!storyIdFromApi) storyIdFromApi = fg.state.app.currentStoryId;
+
+
 
 let apiResponse = await getStoryById(storyIdFromApi)
 // let apiResponse;
-
 let currentStory: any;
-if (apiResponse == null) currentStory = Story;
+if(startLocalStory == '1') {
+	currentStory = LocalStory;
+}
+else if (apiResponse == null) currentStory = Story;
 // set current story
 else currentStory = JSON.parse(apiResponse.content);
 
